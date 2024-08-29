@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="w-full max-w-md p-6 bg-stone-400 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-center mb-6">To-Do List</h2>
+            <div class="flex p-2 h-15 mb-4 justify-center">
+                  <div class="">
+                       <input id="taskInput" type="text" placeholder="Add a new task" class="p-2 h-15 border rounded bg-rounded text-xl hover:border-slate-600">
+                  </div>
+                  <button id="addTaskButton" class="bg-blue-400 rounded hover:bg-blue-600 ">Add Task</button>
+            </div>
+            <ul id="taskList" class="mt-4 ">
+              
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
